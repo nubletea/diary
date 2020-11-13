@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>diary</title>
+<meta name="auther" content="wein">
+<meta name="keywords" content="블로그, css, html공부">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="image/fav/favicon-16.png" sizes="16x16">
+<link rel="icon" href="image/fav/favicon-32.png" sizes="32x32">
+<link rel="icon" href="image/fav/favicon-48.png" sizes="48x48">
+<link rel="icon" href="image/fav/favicon-64.png" sizes="64x64">
+<link rel="icon" href="image/fav/favicon-128.png" sizes="128x128">
+<link rel="apple-touch-icon" href="image/fav/favicon-48.png">
+</head>
+
+<body onload="digital_clock();slide()">
+	<div id="header">
+    <h1 class="logo animate__animated animate__tada"><a href="about.html" class="home">diary</a></h1>
+    <ul class="nav">
+        <li><a href="about.html" class="about">about</a></li>
+        <li class="active"><a href="gallery.html" class="gallery">gallery</a></li>
+        <li><a href="contact.html" class="contact">contact</a></li>
+        <li class="searchbox">
+        <form>
+        	<input type="search" name="search" placeholder="검색하세요..">
+            <button type="button"><img class="searchbutton" src="image/nav_icon/search.svg" alt="검색"></button>
+        </form>
+        </li>
+    </ul>
+    <ul class="sns">
+    	<li class="facebook"><a href="#"></a></li>
+        <li class="twitter"><a href="#"></a></li>
+        <li class="kakaotalk"><a href="#"></a></li>
+        <li class="insta"><a href="#"></a></li>
+    </ul>
+    <div class="clock">
+        <div class="hour_minit">
+            <span class="hour"></span> : <span class="minute"></span>
+        </div>
+        <div class="mnig_sec">
+            <span class="mning_afnoon"></span></br>
+            <span class="second"></span>
+    </div>  
+    </div>
+</div>
+    </div>
+    <div id="container">
+    	<div class="banner">
+        	<ul class="bannerin">
+                <li><img src="image/banner/1.png" alt="banner1"></li>
+                <li><img src="image/banner/2.png" alt="banner2"></li>
+                <li><img src="image/banner/3.png" alt="banner3"></li>
+            </ul>
+        </div>
+        <!--loop-->
+            <div class="clearfix section animate__animated animate__fadeInDownBig">
+                <!--loop-->
+                <h1>일러스트 작업</h1>
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/shop.png" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/shop.png" alt="banner1"></a>
+                        <h3>샵 작업</h3>
+                        <p>샵 일러스트로 만들기</p>
+                </div>
+        	</div>
+             <!--loop-->  
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/mt.png" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/mt.png" alt="banner1"></a>
+                        <h3>산 작업</h3>
+                        <p>산 일러스트로 만들기</p>
+                </div>
+        	</div>
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/lake.jpg" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/lake.jpg" alt="banner1"></a>
+                        <h3>호수 작업</h3>
+                        <p>호수 일러스트로 만들기</p>
+                </div>
+            </div>
+            <h1>포토샵 작업</h1>
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/sea.png" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/sea.png" alt="banner1"></a>
+                        <h3>휴대폰 디자인</h3>
+                        <p>튀어나오는 물고기 디자인</p>
+                </div>
+ 
+        	</div>
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/fantasy.png" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/fantasy.png" alt="banner1"></a>
+                        <h3>인물 디자인</h3>
+                        <p>판타지에 나오는 인물 디자인</p>
+                </div>
+ 
+        	</div>
+            	<div class="gbox">
+                	<div class="gal">
+                    	<a href="image/gallery/hug.png" onclick='pop_gal(event,this)' class="agallery"><img src="image/gallery/hug.png" alt="banner1"></a>
+                        <h3>텍스트 디자인</h3>
+                        <p>텍스트로 디자인</p>
+                </div>
+ 
+        	</div>
+    </div>
+
+    <div id="footer">
+    	Copyright &copy; jin 2020 all right reserved.
+    </div>
+    <div class="popup">
+    	<div class="close" onclick='pop_cs()'>X</div>
+        <div class="img-box">
+        
+        </div>
+    </div><!--popup-->
+    <script src="js/custom.js"></script>
+</body>
+</html>

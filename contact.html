@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>diary</title>
+<meta name="auther" content="wein">
+<meta name="keywords" content="블로그, css, html공부">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="icon" href="image/fav/favicon-16.png" sizes="16x16">
+<link rel="icon" href="image/fav/favicon-32.png" sizes="32x32">
+<link rel="icon" href="image/fav/favicon-48.png" sizes="48x48">
+<link rel="icon" href="image/fav/favicon-64.png" sizes="64x64">
+<link rel="icon" href="image/fav/favicon-128.png" sizes="128x128">
+<link rel="apple-touch-icon" href="image/fav/favicon-48.png">
+</head>
+<body onload="digital_clock();slide()">
+	<div id="header">
+        <h1 class="logo animate__animated animate__shakeY"><a href="about.html" class="home">diary</a></h1>
+        <ul class="nav">
+            <li><a href="about.html" class="about">about</a></li>
+            <li><a href="gallery.html" class="gallery">gallery</a></li>
+            <li class="active"><a href="contact.html" class="contact">contact</a></li>
+            <li class="searchbox">
+                <form>
+                    <input type="search" name="search" placeholder="검색하세요..">
+                    <button type="button"><img class="searchbutton" src="image/nav_icon/search.svg" alt="검색"></button>
+                </form>
+            </li>
+        </ul>
+        <ul class="sns">
+            <li class="facebook"><a href="#"></a></li>
+            <li class="twitter"><a href="#"></a></li>
+            <li class="kakaotalk"><a href="#"></a></li>
+            <li class="insta"><a href="#"></a></li>
+        </ul>
+        <div class="clock">
+            <div class="hour_minit">
+                <span class="hour"></span> : <span class="minute"></span>
+            </div>
+            <div class="mnig_sec">
+                <span class="mning_afnoon"></span></br>
+                <span class="second"></span>
+        </div>  
+        </div>
+    </div>
+    <div id="container">
+           <div class="banner">
+        	<ul class="bannerin">
+                <li><img src="image/banner/1.png" alt="banner1"></li>
+                <li><img src="image/banner/2.png" alt="banner2"></li>
+                <li><img src="image/banner/3.png" alt="banner3"></li>
+            </ul>
+           </div>
+        <!--loop-->
+        <div class="clearfix section animate__animated animate__fadeIn">
+        	<div class="map">
+				<img src="https://map2.daum.net/map/mapservice?FORMAT=PNG&SCALE=2.5&MX=426235&MY=1152763&S=0&IW=775&IH=600&LANG=0&COORDSTM=WCONGNAMUL&logo=kakao_logo">
+                <div class="formbox">
+                    <div class="form-side front">
+                        <form class="contact_form">
+                            <ul class="name_nav">
+                                <li class="text_form"><label for="name" class="label name_label">이름</label><input type="text" name="name1" id="name"></li>
+                                <li class="text_form"><label for="email" class="label">이메일</label><input type="email" name="e-mail" id="email"></li>
+                                <li class="text_form"><label for="tel" class="label">휴대폰</label><input type="tel" name="tel" id="tel"></li>
+                                <li class="textarea_li"><textarea name="message" id="message"></textarea></li>
+                                <li class="button_li"><button type="button" onclick="button()" class="btn">전송하기</button></li>
+                            </ul>  
+                        </form>
+                    </div>
+                    <div class="panel"></div>
+                    <div class="form-side back">
+                        <p>input 패널 카드입니다.</p>
+                        <span>3D 작업</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+    	Copyright &copy; jin 2020 all right reserved.
+    </div>
+</body>
+<script src="js/custom.js"></script>
+<script>
+    const FORM=document.querySelector('.formbox');
+    FORM.addEventListener('click',()=>{
+        FORM.classList.toggle('flipped');
+    });
+</script>
+</html>
